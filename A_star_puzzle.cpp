@@ -139,10 +139,9 @@ void solveEight(int start[], int goal[])
 
 bool solvable(int start[])
 {
-    int invrs = 0;
+    int invrs = 0; // Number of inversions
     for (int i = 0; i < 9; i++)
     {
-
         if (start[i] <= 1)
             continue;
         for (int j = i + 1; j < 9; j++)
@@ -176,7 +175,6 @@ int main()
     {
         cin >> goal[i];
     }
-
     // Print(start);
     if (solvable(start))
         solveEight(start, goal);

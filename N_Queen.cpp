@@ -65,6 +65,12 @@ bool nQueen(vector<vector<int>> &arr, int x, int n)
 
 int main()
 {
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt",
+                "r", stdin);
+        freopen("output.txt",
+                "w", stdout);
+    #endif
     int n; // size of a chessboard;
     cin >> n;
     vector<vector<int>> arr(n, vector<int>(n));
